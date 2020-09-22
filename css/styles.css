@@ -1,0 +1,155 @@
+#title {
+  background-color: #C9C8E8;
+}
+
+h1 {
+  color: #1D2B3D;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+h2 {
+  padding-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+h3 {
+  padding-top: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  font-size: 15px;
+  padding-top: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #D9A4B0;
+  text-align: center;
+}
+
+em {
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 20px;
+}
+
+.phone {
+  width: 400px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-left: 0;
+}
+
+@media (min-width:900px) {
+  .phone {
+    margin-left: 100px;
+    margin-bottom: 20px;
+  }
+}
+
+.dark1, .dark2, .dark3 {
+  width: 200px;
+  border-radius: 200%;
+  margin-top: 60px;
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+.navbar-brand {
+  font-size: 3rem;
+  font-family: 'Sacramento', cursive;
+  padding-right: 20px;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#button1 {
+  margin-left: 10px;
+}
+
+#button2 {
+  margin-left: 10px;
+}
+
+#icon1, #icon2, #icon3 {
+  position: relative;
+  left: 42%;
+  text-align: center;
+  color: #D09CF7;
+  font-size: 45px;
+}
+
+#icon1:hover, #icon2:hover, #icon3:hover {
+  position: relative;
+  left: 42%;
+  text-align: center;
+  color: #F53029;
+  font-size: 45px;
+}
+
+#features {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+#testimonials {
+  background-color: #C9C8E8;
+  text-align: center;
+}
+
+.carousel-item {
+  padding: 5% 15%;
+}
+
+#press {
+  background-color: #C9C8E8;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.press-logo {
+  width: 10%;
+  margin: 50px;
+}
+
+#pricing {
+  text-align: center;
+  padding: 100px;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+#cta {
+  background-color: #C9C8E8;
+  text-align: center;
+  height: 350px;
+}
+
+.cta {
+  padding: 2% 19%;
+}
+
+#footer {
+  text-align: center;
+  padding: 3% 15%;
+}
+
+.footer-icon {
+  margin: 10px;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+}

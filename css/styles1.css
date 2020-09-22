@@ -1,0 +1,151 @@
+.top {
+  background-color: #f6f7d4;
+  position: relative;
+  padding-top: 100px;
+}
+
+.middle {
+  background-color: #d2f6c5;
+}
+
+.bottom {
+  padding-top: 20px;
+  background-color: #99f3bd;
+  position: relative;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  top: 50px;
+  font-size: 5.625rem;
+  font-family: 'Sacramento', cursive;
+  color: #66BFBF;
+  margin: 50px auto 0 auto;
+}
+
+p {
+  top: 50px;
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #66BFBF;
+  font-weight: normal;
+}
+
+.top-cloud {
+  position: absolute;
+  top: 50px;
+  right: 300px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+
+.a {
+  margin-top: 50px;
+}
+
+.a {
+  height: 300px;
+  width: 300px;
+}
+
+.b {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.c {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.btn {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  bottom: 20px;
+}
+
+.footer-link1 {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 20px 0;
+  text-decoration: none;
+}
+
+.footer-link2 {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 20px 0;
+}
+
+input {
+  height: 30px;
+  width: 30px;
+}
+
+.linkedin, .twitter {
+  height: 30px;
+  width: 30px;
+}
+
+.gmail, .outlook {
+  height: 30px;
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+.gma {
+  text-decoration: none;
+  padding: 0 20px 0;
+}
+
+.out {
+  padding: 0 20px 0;
+}
+
+h3, a {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #44BFBF;
+}
+
+.skill-row {
+  margin: 100px auto 100px;
+  width: 50%;
+  text-align: left;
+  line-height: 2;
+}
+
+.copy {
+  color: #EAF6F6;
+  font-family: 'Merriweather', serif;
+  margin: 15px auto 0;
+  padding-bottom: 15px; 
+}
+
+.coding {
+  padding-top: 20px;
+}
+
+hr {
+  width: 5%;
+  border-top: 5px;
+  color: #11BFBF;
+  border-style: dotted none none none;
+}
