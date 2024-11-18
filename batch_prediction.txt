@@ -1,0 +1,48 @@
+import time
+import vertexai
+import os
+
+from vertexai.batch_prediction import BatchPredictionJob
+
+# TODO(developer): Update and un-comment below line
+PROJECT_ID = "translation-llm"
+
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/Users/prakou/Downloads/translation-llm-86e95fb15e10.json'
+
+
+# Initialize vertexai
+vertexai.init(project=PROJECT_ID, location="us-central1")
+
+input_uri = "bq://translation-llm.engati_test.test_table"
+output_uri = "bq://translation-llm.engati_test.output"
+
+# Submit a batch prediction job with Gemini model
+batch_prediction_job = BatchPredictionJob.submit(
+    source_model="gemini-1.5-flash-002",
+    input_dataset=input_uri,
+    output_uri_prefix=output_uri,
+)
+
+# Check job status
+print(f"Job resource name: {batch_prediction_job.resource_name}")
+print(f"Model resource name with the job: {batch_prediction_job.model_name}")
+print(f"Job state: {batch_prediction_job.state.name}")
+
+# Refresh the job until complete
+while not batch_prediction_job.has_ended:
+    time.sleep(3)
+    print("wait")
+    batch_prediction_job.refresh()
+    print("wait123")
+
+# Check if the job succeeds
+if batch_prediction_job.has_succeeded:
+    print("Job succeeded!")
+else:
+    print(f"Job failed: {batch_prediction_job.error}")
+
+# Check the location of the output
+print(f"Job output location: {batch_prediction_job.output_location}")
+
+# Example response:
+#  Job output location: bq://Project-ID/gen-ai-batch-prediction/predictions-model-year-month-day-hour:minute:second.12345
